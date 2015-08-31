@@ -1,0 +1,28 @@
+{% extends 'layout.html' %}
+
+{% block title %}{% endblock %}
+
+
+{% block content %}
+
+<div class="container">
+
+  <h1>{{ title }}</h1>
+    <form method="post" action='/sumbit'>
+      <div class="form-group">
+        <input type="text id="githubName" name="name" placeholder=" Git Hub Name">
+        <input type="text" id="githubURL" name="url" placeholder=" Git Hub URL">
+        <input type="text" id="githubImage" name="image" placeholder="Git Hub Image">
+  <input type="submit" name="submit" class="btn btn-primary">
+    </form>
+      <br><br>
+    <div class="alert alert-success" role="alert" id="success-message">
+      </div>
+</div>
+
+
+
+
+
+
+{% endblock %}
